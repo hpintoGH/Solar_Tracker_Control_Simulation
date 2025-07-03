@@ -186,10 +186,6 @@ To visualize simulations with additional data, use the CSV data tables located i
 # Demo
 Add a video or animated gif/picture to showcase the code in operation.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Citation
 
 If you use this work in your research, please cite:
@@ -200,3 +196,7 @@ and NSRDB Data. GitHub Repository: [repository_url]
 
 # Reference
 Add reference papers, data, or supporting material that has been used, if any.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
