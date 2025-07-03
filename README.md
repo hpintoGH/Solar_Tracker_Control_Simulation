@@ -114,24 +114,7 @@ This repository contains a complete intelligent solar tracker control system tha
 └── docs/                   # Documentation and methodology
 ```
 
-### Quick Start
-1. Clone this repository
-2. Download NSRDB data for Daytona Beach, Florida (2018-2023) or your desired location
-3. Run data preprocessing scripts in `src/data_processing/`
-4. Execute `simulation/main_simulation.mlx` to start the simulation
-5. Select between Random Forest or Deep Learning model
-6. Choose test scenario (sunny/cloudy day)
 
-**Note**: The trained models are specifically optimized for Daytona Beach, Florida conditions. For other locations, you'll need to retrain the models using the provided scripts with location-specific NSRDB data.
-
-### Model Training (Optional)
-1. Prepare NSRDB dataset using provided preprocessing scripts
-2. Run MRMR feature selection for Random Forest model in MATLAB
-3. Train Deep Learning model with iterative variable selection in MATLAB
-4. Validate models using 2022 data and test with 2023 data
-5. Use Python PVlib tools for irradiance analysis and performance comparison
-
-**Important**: Models are location-specific. To use this system for locations other than Daytona Beach, Florida, you must retrain both models using local NSRDB data following the same methodology.
 
 ## Performance Metrics
 
@@ -214,15 +197,24 @@ and NSRDB Data. GitHub Repository: [repository_url]
 - MATLAB Deep Learning Toolbox
 - Python 3.9+ with PVlib library and Matplotlib (for irradiance analysis)
 
-### Quick Start
+### Quick start
 1. Clone this repository
-2. Download NSRDB data for Daytona Beach, Florida (2018-2023) or your desired location
-3. Run data preprocessing scripts in `src/data_processing/`
-4. Execute `simulation/main_simulation.mlx` to start the simulation
-5. Select between Random Forest or Deep Learning model
-6. Choose test scenario (sunny/cloudy day)
+2. To start the simulation, run Solar_tracker_simulation.mlx. It is advisable to execute it section by section, particularly when using an external IDE for the Python code, to prevent potential errors.
+3. Choose the test scenario (sunny/cloudy day) from the data available in the data_for_simulation folder
+4. Select between Random Forest or MLP model
+
+To visualize simulations with additional data, use the CSV data tables located in the data_for_simulation folder. You can modify or select the desired time period, although the available data only covers the years 2023 and 2024. If you need more recent or real-time data, you must obtain it from an external platform or data provider.
 
 **Note**: The trained models are specifically optimized for Daytona Beach, Florida conditions. For other locations, you'll need to retrain the models using the provided scripts with location-specific NSRDB data.
+
+### Model Training (Optional)
+1. Prepare NSRDB dataset using provided preprocessing scripts
+2. Run MRMR feature selection for Random Forest model in MATLAB
+3. Train Deep Learning model with iterative variable selection in MATLAB
+4. Validate models using 2022 data and test with 2023 data
+5. Use Python PVlib tools for irradiance analysis and performance comparison
+
+**Important**: Models are location-specific. To use this system for locations other than Daytona Beach, Florida, you must retrain both models using local NSRDB data following the same methodology.
 
 # Demo
 Add a video or animated gif/picture to showcase the code in operation.
