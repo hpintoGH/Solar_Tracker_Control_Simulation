@@ -114,8 +114,6 @@ This repository contains a complete intelligent solar tracker control system tha
 └── docs/                   # Documentation and methodology
 ```
 
-
-
 ## Performance Metrics
 
 ### Tracking Accuracy
@@ -143,39 +141,6 @@ This repository contains a complete intelligent solar tracker control system tha
 4. **Cross-Platform Validation**: MATLAB/Python integration for result verification
 5. **Real-World Testing**: Actual weather scenarios from 2023 dataset
 
-## Dependencies
-
-### MATLAB/Simulink
-- Machine Learning Toolbox (for Random Forest and Deep Learning training)
-- Control System Toolbox
-- Signal Processing Toolbox
-
-### Python
-- PVlib (for solar position calculations and irradiance analysis)
-- pandas
-- numpy
-- matplotlib
-
-## Contributing
-
-Contributions welcome! Areas of interest:
-- **Location Adaptation**: Scripts for retraining models for different geographic locations
-- **Additional ML Models**: Enhanced weather prediction algorithms
-- **Extended Geographic Validation**: Multi-location performance analysis
-- **Hardware Integration**: Real-world implementation improvements
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Citation
-
-If you use this work in your research, please cite:
-```
-[Your Name] (2025). Intelligent Solar Tracker Control System using Machine Learning 
-and NSRDB Data. GitHub Repository: [repository_url]
-```
-
 ## Acknowledgments
 
 - **NREL** for the Solar Position Algorithm and NSRDB dataset
@@ -199,25 +164,39 @@ and NSRDB Data. GitHub Repository: [repository_url]
 
 ### Quick start
 1. Clone this repository
-2. To start the simulation, run Solar_tracker_simulation.mlx. It is advisable to execute it section by section, particularly when using an external IDE for the Python code, to prevent potential errors.
+2. To start the simulation, open Solar_tracker_simulation.mlx and read the instructions. It is advisable to execute it section by section, particularly when using an external IDE for the Python code, to prevent potential errors.
 3. Choose the test scenario (sunny/cloudy day) from the data available in the data_for_simulation folder
 4. Select between Random Forest or MLP model
+5. If you plan to run Python code from MATLAB, follow the instructions provided in the script. Otherwise, you will need to use an external IDE and set up the working environment in that IDE for PVlib.
 
-To visualize simulations with additional data, use the CSV data tables located in the data_for_simulation folder. You can modify or select the desired time period, although the available data only covers the years 2023 and 2024. If you need more recent or real-time data, you must obtain it from an external platform or data provider.
+To visualize simulations with additional data, use the CSV data tables located in the data_for_simulation folder. You can modify or select the desired time period, although the available data only covers the years 2023 and 2024. If you need more recent or real-time data, you must obtain it from a data provider.
 
-**Note**: The trained models are specifically optimized for Daytona Beach, Florida conditions. For other locations, you'll need to retrain the models using the provided scripts with location-specific NSRDB data.
+**Note**: The trained models are specifically optimized for Daytona Beach, Florida conditions. For other locations, you'll need to retrain the models using the provided scripts with location-specific NSRDB data or other sources.
 
 ### Model Training (Optional)
 1. Prepare NSRDB dataset using provided preprocessing scripts
-2. Run MRMR feature selection for Random Forest model in MATLAB
-3. Train Deep Learning model with iterative variable selection in MATLAB
-4. Validate models using 2022 data and test with 2023 data
-5. Use Python PVlib tools for irradiance analysis and performance comparison
+2. Calculate optimal panel positions using the PVlib code Irradiation_pvlib.py
+3. Run MRMR feature selection for Random Forest model in MATLAB
+4. Train Deep Learning model with iterative variable selection in MATLAB
+5. Validate models using 2022 data and test with 2023 data
+6. Use Python PVlib tools for irradiance analysis and performance comparison
 
 **Important**: Models are location-specific. To use this system for locations other than Daytona Beach, Florida, you must retrain both models using local NSRDB data following the same methodology.
 
 # Demo
 Add a video or animated gif/picture to showcase the code in operation.
-  
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Citation
+
+If you use this work in your research, please cite:
+```
+[Your Name] (2025). Intelligent Solar Tracker Control System using Machine Learning 
+and NSRDB Data. GitHub Repository: [repository_url]
+```
+
 # Reference
 Add reference papers, data, or supporting material that has been used, if any.
