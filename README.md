@@ -41,6 +41,13 @@ This repository contains a complete intelligent solar tracker control system tha
 - **Albedo** (for PVlib irradiance calculations)
 - **Optional: Temperature** (for solar position calculations with PVlib)
 
+### Target Variable
+
+- **Optimal Panel Position** (azimuth and elevation angles)
+- **Calculation Method:** PVlib's get_total_irradiance function using the Perez model
+- **Input Parameters:** Solar zenith angle, azimuth angle, DNI, DHI, GHI, extraterrestrial irradiance, and albedo
+- **Optimization Objective:** Maximum total irradiance on tilted panel surface
+
 ### Training Strategy
 - **Training Period**: 2018-2021 (4 years)
 - **Validation Period**: 2022 (1 year)
@@ -51,7 +58,7 @@ This repository contains a complete intelligent solar tracker control system tha
 
 ## Machine Learning Models
 
-### Random Forest Model
+### Random Forest Model 
 - Feature selection using MRMR algorithm
 - Optimized variable subset for weather-based tracking prediction
 - Robust performance across varying weather conditions
@@ -68,11 +75,9 @@ This repository contains a complete intelligent solar tracker control system tha
 - **Reference**: Meysam Mahooti (2025). NREL's Solar Position Algorithm (SPA), MATLAB Central File Exchange
 - **Custom Integration**: Script for performing time-based calculations with user-defined intervals
 
-### Alternative: Python PVlib Integration
-- **Purpose**: Solar position calculations and irradiance analysis
-- **Performance comparison tool** for validating tracking effectiveness
-- **Irradiance calculation** for different panel orientations
-- **Cross-validation** between ML predictions and astronomical tracking
+### Alternative:
+- Python PVlib Integration
+- NOAA Solar Calculator
 
 ## Simulation Environment
 
