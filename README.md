@@ -85,7 +85,7 @@ This repository contains a complete intelligent solar tracker control system tha
 - **Dual-axis tracking system** with azimuth and elevation control
 - **NEMA 17 stepper motors** (1.8° per step resolution)
 - **Real-time weather data integration**
-- **Model selection interface** (Random Forest vs. Deep Learning)
+- **Model selection interface** (Random Forest or Deep Learning)
 
 ### Test Scenarios
 - **Sunny Day Simulation**: Clear sky conditions from 2023 dataset
@@ -113,14 +113,6 @@ This repository contains a complete intelligent solar tracker control system tha
 │   └── test_scenarios/     # Sunny and cloudy day test cases
 └── docs/                   # Documentation and methodology
 ```
-
-## Installation and Usage
-
-### Prerequisites
-- MATLAB R2020a or later
-- Simulink
-- MATLAB Machine Learning Toolbox
-- Python 3.8+ with PVlib library (for irradiance analysis and comparison tools)
 
 ### Quick Start
 1. Clone this repository
@@ -209,7 +201,28 @@ and NSRDB Data. GitHub Repository: [repository_url]
 - **NSRDB Contributors** for the comprehensive solar radiation database
 
 # How to run section
-Please explain step by step how to run the code/model and include information about what toolboxes and other resources needed to run it.
+
+## Installation and Usage
+
+### Prerequisites
+- MATLAB R2024b or later
+- Simulink
+- Simscape
+- Simscape Multibody
+- Simscape Electrical
+- MATLAB Statistics and Machine Learning Toolbox
+- MATLAB Deep Learning Toolbox
+- Python 3.9+ with PVlib library and Matplotlib (for irradiance analysis)
+
+### Quick Start
+1. Clone this repository
+2. Download NSRDB data for Daytona Beach, Florida (2018-2023) or your desired location
+3. Run data preprocessing scripts in `src/data_processing/`
+4. Execute `simulation/main_simulation.mlx` to start the simulation
+5. Select between Random Forest or Deep Learning model
+6. Choose test scenario (sunny/cloudy day)
+
+**Note**: The trained models are specifically optimized for Daytona Beach, Florida conditions. For other locations, you'll need to retrain the models using the provided scripts with location-specific NSRDB data.
 
 # Demo
 Add a video or animated gif/picture to showcase the code in operation.
