@@ -176,7 +176,7 @@ To visualize simulations with additional data, use the CSV data tables located i
 | ![RF_solar_position_sunny_day](https://github.com/user-attachments/assets/7a89f703-dfab-4df9-a311-b5f336b25d6c) | ![SPA_solar_position_sunny_day](https://github.com/user-attachments/assets/de0e15b2-a5c5-4b57-a327-5de52a694c28) |
 |-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 
-
+[Random Forest prediction for sunny day](https://youtu.be/lWYLqjOefW4)
 
 ## Citation
 
