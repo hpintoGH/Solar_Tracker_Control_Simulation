@@ -108,17 +108,16 @@ This repository contains a complete intelligent solar tracker control system tha
 │   ├── simulink/           # Simulink models and motor control
 │   ├── data_processing/    # NSRDB data preprocessing scripts
 │   └── feature_selection/  # MRMR and variable selection algorithms
-├── data/
+├── Machine_Learning_model/
 │   ├── nsrdb_raw/          # Raw NSRDB data (2018-2023)
 │   ├── processed/          # Preprocessed training/validation/test sets
 │   └── results/            # Simulation results and performance metrics
-├── python_tools/
+├── Machine_Learning_model/
 │   ├── pvlib_solar_pos/    # Python PVlib solar position calculations
 │   └── irradiance_analysis/ # PVlib-based performance comparison tools
-├── simulation/
+├── WormAndGearConstraintSupport/
 │   ├── main_simulation.mlx  # Main simulation interface (model selection)
 │   └── test_scenarios/     # Sunny and cloudy day test cases
-└── docs/                   # Documentation and methodology
 ```
 
 ## Performance Metrics
