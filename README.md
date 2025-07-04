@@ -128,18 +128,11 @@ This repository contains a complete intelligent solar tracker control system tha
 
 ## Research Applications
 
-- **Intelligent Solar Tracking**: Weather-predictive panel positioning
-- **Machine Learning in Renewable Energy**: Comparative ML model analysis
-- **Solar Resource Assessment**: NSRDB data utilization methodologies
-- **Control Systems Education**: Advanced Simulink modeling techniques
+This project serves multiple research domains, providing a comprehensive framework for intelligent solar tracking through weather-predictive panel positioning that goes beyond traditional astronomical methods. The implementation offers valuable insights for machine learning applications in renewable energy, particularly through comparative analysis of Random Forest and Deep Learning models for solar optimization tasks. Additionally, the project serves as an educational resource for control systems engineering, featuring Simulink modeling techniques that integrate machine learning predictions with hardware simulation for dual-axis solar tracking mechanisms.
 
 ## Key Innovations
 
-1. **Weather-Based Tracking**: ML models predict optimal positioning based on atmospheric conditions
-2. **Comprehensive Data Integration**: 6-year NSRDB dataset with 10-minute resolution
-3. **Dual Algorithm Approach**: Random Forest and Deep Learning model comparison
-4. **Cross-Platform Validation**: MATLAB/Python integration for result verification
-5. **Real-World Testing**: Actual weather scenarios from 2023 dataset
+The project introduces several groundbreaking approaches to solar tracking technology. The system employs irradiance-optimized tracking where machine learning models predict panel positions that maximize total irradiance using PVlib's established Perez model, moving beyond sun-following algorithms to weather-driven optimization that accounts for atmospheric conditions affecting solar radiation. The comprehensive data integration approach utilizes a six-year NSRDB dataset with 10-minute temporal resolution, providing robust training data that captures seasonal variations and weather patterns specific to the Daytona Beach location. The dual algorithm methodology compares Random Forest and Deep Learning approaches for optimal positioning predictions, offering insights into model performance under varying atmospheric conditions. The physics-based target generation employs the Perez model for diffuse irradiance calculations, ensuring that the machine learning models learn from  optimal positions. Finally, the real-world validation framework uses actual weather scenarios from the 2023 dataset with irradiance-based performance metrics, demonstrating practical applicability of the predictive models under diverse meteorological conditions.
 
 # How to run section
 
