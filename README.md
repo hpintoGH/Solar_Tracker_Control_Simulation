@@ -178,7 +178,7 @@ To visualize simulations with additional data, use the CSV data tables located i
 # Simulation and Results
 
 
-| ![RF_solar_position_sunny_day](https://github.com/user-attachments/assets/47f7eac7-8f17-4b3c-bea9-08bcbc7ba3fc) | ![SPA_solar_position_sunny_day](https://github.com/user-attachments/assets/1870f135-601d-4946-9be9-b16f175f5adb) |
+| ![RF_solar_position_sunny_day](https://github.com/user-attachments/assets/7a89f703-dfab-4df9-a311-b5f336b25d6c) | ![SPA_solar_position_sunny_day](https://github.com/user-attachments/assets/de0e15b2-a5c5-4b57-a327-5de52a694c28) |
 |-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 
 
