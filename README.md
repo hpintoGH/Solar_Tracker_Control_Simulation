@@ -33,7 +33,7 @@ This repository contains a complete intelligent solar tracker control system tha
 - **Temporal Resolution**: 10-minute intervals
 - **Geographic Scope**: Location-specific training (models optimized for Florida climate conditions)
 
-### Input Variables for training models
+### Input Variables
 - Month
 - Day of the year (julian day)
 - Sine of the hour
