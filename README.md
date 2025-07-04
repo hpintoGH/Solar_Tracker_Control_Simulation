@@ -141,13 +141,6 @@ This repository contains a complete intelligent solar tracker control system tha
 4. **Cross-Platform Validation**: MATLAB/Python integration for result verification
 5. **Real-World Testing**: Actual weather scenarios from 2023 dataset
 
-## Acknowledgments
-
-- **NREL** for the Solar Position Algorithm and NSRDB dataset
-- **Meysam Mahooti** for the MATLAB SPA implementation
-- **PVlib Development Team** for the photovoltaic modeling library
-- **NSRDB Contributors** for the comprehensive solar radiation database
-
 # How to run section
 
 ## Installation and Usage
