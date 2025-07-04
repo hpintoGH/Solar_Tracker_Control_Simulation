@@ -16,14 +16,11 @@ This repository contains a complete intelligent solar tracker control system tha
 
 ## Key Features
 
-- **Machine Learning-Based Tracking**: Two trained models for intelligent panel positioning
-  - Random Forest model with MRMR feature selection
-  - Multi-Layer Perceptron (MLP) with 4 fully-connected layers
-- **Real-World Data Integration**: NSRDB (National Solar Radiation Database) 2018-2023 dataset
-- **Comprehensive Simulation Environment**: Full Simulink model with NEMA 17 stepper motor control
-- **Performance Comparison Tools**: Python-based irradiance analysis using PVlib comparing ML vs. astronomical tracking
-- **Location-Specific Training**: Models trained for Daytona Beach, Florida conditions
-- **Flexible Solar Position Calculation**: Multiple algorithms including NREL's SPA and Python PVlib integration
+The system implements machine learning-based tracking through two trained models designed for intelligent panel positioning that maximizes solar irradiance capture. The Random Forest model incorporates MRMR (Maximum Relevance Minimum Redundancy) feature selection to identify the most relevant weather variables for optimal positioning predictions, while the Multi-Layer Perceptron (MLP) architecture features four fully-connected layers that capture nonlinear relationships between atmospheric conditions and optimal panel angles.
+
+Real-world data integration forms the foundation of the system through the comprehensive NSRDB (National Solar Radiation Database) dataset spanning 2018-2023, providing six years of high-resolution meteorological and solar radiation data. The simulation environment encompasses a complete Simulink model featuring NEMA 17 stepper motor control systems that represent the mechanical aspects of dual-axis solar tracking hardware.
+
+Performance comparison tools utilize Python-based irradiance analysis through PVlib libraries, enabling detailed comparisons between machine learning predictions and traditional astronomical tracking methods. The location-specific training approach focuses on Daytona Beach, Florida conditions, selected arbitrarily within the United States due to the availability and accessibility of high-resolution temporal and spatial data necessary for robust model development. The system incorporates flexible solar position calculation capabilities through multiple algorithms, including NREL's Solar Position Algorithm (SPA) for precise astronomical calculations and Python PVlib integration for comprehensive irradiance modeling and validation.
 
 ## Dataset and Training
 
