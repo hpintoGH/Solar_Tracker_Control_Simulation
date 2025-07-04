@@ -1,9 +1,10 @@
 # Solution to MATLAB and Simulink Challenge project 249 Solar Tracker Control Simulation
 
+![image](https://github.com/user-attachments/assets/91604bb0-f217-4016-881f-0210dcbf2815)
+
 [Program link](https://github.com/mathworks/MATLAB-Simulink-Challenge-Project-Hub)
 
-[projects/Solar Tracker Control Simulation](https://github.com/mathworks/MATLAB-Simulink-Challenge-Project-Hub/tree/main/projects/Solar%20Tracker%20Control%20Simulation)
-
+[Solar Tracker Control Simulation](https://github.com/mathworks/MATLAB-Simulink-Challenge-Project-Hub/tree/main/projects/Solar%20Tracker%20Control%20Simulation)
 
 # Project details
 
@@ -33,13 +34,19 @@ This repository contains a complete intelligent solar tracker control system tha
 - **Geographic Scope**: Location-specific training (models optimized for Florida climate conditions)
 
 ### Input Variables
+- **Month**
+- **Day of the year (julian day)**
+- **Sine of the hour**
+- **Cosine of the hour**
 - **DNI (Direct Normal Irradiance)**
 - **DHI (Diffuse Horizontal Irradiance)**  
 - **GHI (Global Horizontal Irradiance)**
-- **Relative Humidity**
+- **Azimuth of the sun**
+- **Zenith of the sun**- 
 - **Wind Speed**
-- **Albedo** (for PVlib irradiance calculations)
-- **Optional: Temperature** (for solar position calculations with PVlib)
+- **Relative Humidity**
+- **Albedo** (used in PVlib irradiance calculations)
+- **Optional: Temperature** (used in solar position calculations with PVlib)
 
 ### Target Variable
 
