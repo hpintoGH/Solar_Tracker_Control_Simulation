@@ -33,7 +33,7 @@ This repository contains a complete intelligent solar tracker control system tha
 - **Temporal Resolution**: 10-minute intervals
 - **Geographic Scope**: Location-specific training (models optimized for Florida climate conditions)
 
-### Input Variables
+### Input Variables for training models
 - **Month**
 - **Day of the year (julian day)**
 - **Sine of the hour**
@@ -45,8 +45,6 @@ This repository contains a complete intelligent solar tracker control system tha
 - **Zenith of the sun**- 
 - **Wind Speed**
 - **Relative Humidity**
-- **Albedo** (used in PVlib irradiance calculations)
-- **Optional: Temperature** (used in solar position calculations with PVlib)
 
 ### Target Variable
 
