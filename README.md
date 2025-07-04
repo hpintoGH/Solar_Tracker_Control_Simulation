@@ -175,8 +175,13 @@ To visualize simulations with additional data, use the CSV data tables located i
 
 **Important**: Models are location-specific. To use this system for locations other than Daytona Beach, Florida, you must retrain both models using local NSRDB data following the same methodology.
 
-# Demo
-Add a video or animated gif/picture to showcase the code in operation.
+# Simulation and Results
+
+
+| ![RF_solar_position_sunny_day](https://github.com/user-attachments/assets/47f7eac7-8f17-4b3c-bea9-08bcbc7ba3fc) | ![SPA_solar_position_sunny_day](https://github.com/user-attachments/assets/1870f135-601d-4946-9be9-b16f175f5adb) |
+|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+
+
 
 ## Citation
 
@@ -187,7 +192,9 @@ and NSRDB Data. GitHub Repository: [repository_url]
 ```
 
 # Reference
-Add reference papers, data, or supporting material that has been used, if any.
+Anderson, K., Hansen, C., Holmgren, W., Jensen, A., Mikofski, M., and Driesse, A. “pvlib python: 2023 project update.” Journal of Open Source Software, 8(92), 5994, (2023). DOI: 10.21105/joss.05994.
+
+Sengupta, M., Xie, Y., Lopez, A., Habte, A., Maclaurin, G., Shelby, J., 2018. The National Solar Radiation Data Base (NSRDB). Renew. Sustain. Energy Rev. 89, 51-60. https://doi.org/10.1016/j.rser.2018.03.003.
 
 ## License
 
