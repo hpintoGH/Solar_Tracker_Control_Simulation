@@ -178,6 +178,45 @@ To visualize simulations with additional data, use the CSV data tables located i
 
 [Random Forest prediction for sunny day](https://youtu.be/lWYLqjOefW4)
 
+| IRRADIANCE STATISTICS (W/m²) | Value | PERFORMANCE COMPARISON           | Value |
+|------------------------------|-------|----------------------------------|-------|
+| Average GHI:                 | 564.1 | ML tracking ratio:               | 1.567 |
+| Average ML POA:              | 723.7 | Astronomical tracking ratio:     | 1.569 |
+| Average Astronomical POA:    | 724.8 | ML tracking gain:                | 56.7% |
+| Maximum ML POA:              | 993.3 | Astronomical tracking gain:      | 56.9% |
+| Maximum Astronomical POA:    | 993.3 | ML efficiency (vs Astronomical): | 99.9% |
+
+DIFFERENCE ANALYSIS                               
+--------------------------------------------------
+Mean difference (Astro - ML):  1.1 W/m²
+Std deviation of difference:   1.4 W/m²
+Mean percentage difference:    0.1%
+Max positive difference:       4.9 W/m²
+Max negative difference:       -0.8 W/m²
+
+ANGLE OF INCIDENCE ANALYSIS                       
+--------------------------------------------------
+Average ML AOI:                7.2°
+Average Astronomical AOI:      2.0°
+Minimum ML AOI:                0.3°
+Minimum Astronomical AOI:      0.0°
+
+DAILY ENERGY ANALYSIS (kWh/m²)
+--------------------------------------------------
+GHI Energy:                    7.62
+ML Model Energy:               9.77
+Astronomical Energy:           9.78
+ML Energy gain vs GHI:         2.15 (28.3%)
+Astronomical gain vs GHI:      2.17 (28.5%)
+Energy difference (Astro-ML):  0.01 (0.1%)
+
+POSITION ACCURACY                                 
+--------------------------------------------------
+Mean Absolute Tilt Error:      5.1°
+Mean Absolute Azimuth Error:   0.6°
+
+![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/db803cf3-2db1-4128-9389-b4bd41747c74)
+
 ## Citation
 
 If you use this work in your research, please cite:
