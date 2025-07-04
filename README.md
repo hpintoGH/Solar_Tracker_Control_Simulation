@@ -34,17 +34,17 @@ This repository contains a complete intelligent solar tracker control system tha
 - **Geographic Scope**: Location-specific training (models optimized for Florida climate conditions)
 
 ### Input Variables for training models
-- **Month**
-- **Day of the year (julian day)**
-- **Sine of the hour**
-- **Cosine of the hour**
-- **DNI (Direct Normal Irradiance)**
-- **DHI (Diffuse Horizontal Irradiance)**  
-- **GHI (Global Horizontal Irradiance)**
-- **Azimuth of the sun**
-- **Zenith of the sun**- 
-- **Wind Speed**
-- **Relative Humidity**
+- Month
+- Day of the year (julian day)
+- Sine of the hour
+- Cosine of the hour
+- DNI (Direct Normal Irradiance)
+- DHI (Diffuse Horizontal Irradiance)
+- GHI (Global Horizontal Irradiance)
+- Azimuth of the sun
+- Zenith of the sun
+- Wind Speed
+- Relative Humidity
 
 ### Target Variable
 
