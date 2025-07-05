@@ -179,44 +179,31 @@ The comparative analysis of a Random Forest machine learning model against the S
 | ![RF_solar_position_sunny_day](https://github.com/user-attachments/assets/7a89f703-dfab-4df9-a311-b5f336b25d6c) | ![SPA_solar_position_sunny_day](https://github.com/user-attachments/assets/de0e15b2-a5c5-4b57-a327-5de52a694c28) |
 |-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 
+### Performance Equivalence
+
+Both tracking systems demonstrated nearly identical energy collection capabilities, with the ML model achieving 99.9% efficiency compared to the astronomical SPA method. The ML system generated 9.77 kWh/m² versus 9.78 kWh/m² for SPA, representing only a 0.1% difference in daily energy output. Both tracking systems significantly outperformed the baseline global horizontal irradiance (GHI) of 7.62 kWh/m², with energy gains of 2.15 kWh/m² (28.3%) and 2.17 kWh/m² (28.5%) respectively.
+
 [Random Forest prediction for sunny day](https://youtu.be/lWYLqjOefW4)
 
-| IRRADIANCE STATISTICS (W/m²) | Value | PERFORMANCE COMPARISON           | Value |
-|------------------------------|-------|----------------------------------|-------|
-| Average GHI:                 | 564.1 | ML tracking ratio:               | 1.567 |
-| Average ML POA:              | 723.7 | Astronomical tracking ratio:     | 1.569 |
-| Average Astronomical POA:    | 724.8 | ML tracking gain:                | 56.7% |
-| Maximum ML POA:              | 993.3 | Astronomical tracking gain:      | 56.9% |
-| Maximum Astronomical POA:    | 993.3 | ML efficiency (vs Astronomical): | 99.9% |
+| IRRADIANCE STATISTICS (W/m²) | Value | PERFORMANCE COMPARISON           | Value | DIFFERENCE ANALYSIS           |   Value   |
+|------------------------------|-------|----------------------------------|-------|-------------------------------|-----------|
+| Average GHI:                 | 564.1 | ML tracking ratio:               | 1.567 | Mean difference (Astro - ML): | 1.1 W/m²  |
+| Average ML POA:              | 723.7 | Astronomical tracking ratio:     | 1.569 | Std deviation of difference:  | 1.4 W/m²  |
+| Average Astronomical POA:    | 724.8 | ML tracking gain:                | 56.7% | Mean percentage difference:   | 0.1%      |
+| Maximum ML POA:              | 993.3 | Astronomical tracking gain:      | 56.9% | Max positive difference:      | 4.9 W/m²  |
+| Maximum Astronomical POA:    | 993.3 | ML efficiency (vs Astronomical): | 99.9% | Max negative difference:      | -0.8 W/m² |
 
-DIFFERENCE ANALYSIS                               
---------------------------------------------------
-Mean difference (Astro - ML):  1.1 W/m²
-Std deviation of difference:   1.4 W/m²
-Mean percentage difference:    0.1%
-Max positive difference:       4.9 W/m²
-Max negative difference:       -0.8 W/m²
+### Tracking Accuracy Trade-offs
 
-ANGLE OF INCIDENCE ANALYSIS                       
---------------------------------------------------
-Average ML AOI:                7.2°
-Average Astronomical AOI:      2.0°
-Minimum ML AOI:                0.3°
-Minimum Astronomical AOI:      0.0°
+While performance outcomes were equivalent, the tracking methodologies differed significantly. The SPA algorithm maintained superior positional accuracy with an average angle of incidence (AOI) of 2.0° compared to the ML model's 7.2°. The positional differences between the two systems showed a mean absolute error of 5.1° in tilt positioning and 0.6° in azimuth positioning, indicating that the ML model's largest deviations from SPA occur in the tilt axis.
 
-DAILY ENERGY ANALYSIS (kWh/m²)
---------------------------------------------------
-GHI Energy:                    7.62
-ML Model Energy:               9.77
-Astronomical Energy:           9.78
-ML Energy gain vs GHI:         2.15 (28.3%)
-Astronomical gain vs GHI:      2.17 (28.5%)
-Energy difference (Astro-ML):  0.01 (0.1%)
+### Clear Sky Advantage for SPA
 
-POSITION ACCURACY                                 
---------------------------------------------------
-Mean Absolute Tilt Error:      5.1°
-Mean Absolute Azimuth Error:   0.6°
+Under ideal sunny conditions, the astronomical SPA algorithm operates at optimal efficiency since direct solar radiation patterns are predictable and consistent. The absence of cloud interference allows precise sun positioning to maximize energy capture effectively. The ML model's ability to match this performance demonstrates its competence under clear sky scenarios, though the true advantage of machine learning approaches typically emerges under variable weather conditions where cloud movement and diffuse radiation patterns require adaptive tracking strategies.
+
+### Practical Implications
+
+Despite reduced positional precision, the Random Forest model's ability to match SPA performance under clear sky conditions suggests that perfect astronomical tracking may not be necessary for optimal energy collection on sunny days. However, this analysis represents ideal conditions where SPA excels. The ML approach's tolerance for positioning errors while maintaining energy output indicates potential advantages in reduced mechanical complexity, though its true benefits would likely be more apparent during partially cloudy or variable weather conditions where adaptive tracking becomes crucial. 
 
 ![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/db803cf3-2db1-4128-9389-b4bd41747c74)
 
