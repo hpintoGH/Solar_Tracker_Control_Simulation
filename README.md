@@ -172,6 +172,10 @@ To visualize simulations with additional data, use the CSV data tables located i
 
 # Simulation and Results
 
+[Random Forest prediction for sunny day](https://youtu.be/lWYLqjOefW4)
+
+[Random Forest prediction for cloudy day](https://youtu.be/PSMhTjCeY1U)
+
 ## Solar Tracking Performance Analysis: Machine Learning vs SPA on Clear Sky Conditions
 
 The comparative analysis of a Random Forest machine learning model against the Solar Position Algorithm (SPA) for solar tracking reveals remarkably similar performance metrics during the 13-hour daylight period analyzed on June 27, 2023, under clear sky conditions. In the following two graphs, the model's position is shown on the left, and the SPA-adjusted position is shown on the right.
@@ -182,8 +186,6 @@ The comparative analysis of a Random Forest machine learning model against the S
 ### Performance Equivalence
 
 Both tracking systems demonstrated nearly identical energy collection capabilities, with the ML model achieving 99.9% efficiency compared to the astronomical SPA method. The ML system generated 9.77 kWh/m² versus 9.78 kWh/m² for SPA, representing only a 0.1% difference in daily energy output. Both tracking systems significantly outperformed the baseline global horizontal irradiance (GHI) of 7.62 kWh/m², with energy gains of 2.15 kWh/m² (28.3%) and 2.17 kWh/m² (28.5%) respectively.
-
-[Random Forest prediction for sunny day](https://youtu.be/lWYLqjOefW4)
 
 | IRRADIANCE STATISTICS (W/m²) | Value | PERFORMANCE COMPARISON           | Value | DIFFERENCE ANALYSIS           |   Value   |
 |------------------------------|-------|----------------------------------|-------|-------------------------------|-----------|
