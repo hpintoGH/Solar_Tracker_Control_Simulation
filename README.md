@@ -38,8 +38,8 @@ Performance comparison tools utilize Python-based irradiance analysis through PV
 - DNI (Direct Normal Irradiance)
 - DHI (Diffuse Horizontal Irradiance)
 - GHI (Global Horizontal Irradiance)
-- Azimuth of the sun
-- Zenith of the sun
+- Solar Azimuth
+- Solar Zenith
 - Wind Speed
 - Relative Humidity
 
@@ -172,6 +172,9 @@ To visualize simulations with additional data, use the CSV data tables located i
 
 # Simulation and Results
 
+## Solar Tracking Performance Analysis: Machine Learning vs SPA on Clear Sky Conditions
+
+The comparative analysis of a Random Forest machine learning model against the Solar Position Algorithm (SPA) for solar tracking reveals remarkably similar performance metrics during the 13-hour daylight period analyzed on June 27, 2023, under clear sky conditions. In the following two graphs, the model's position is shown on the left, and the SPA-adjusted position is shown on the right.
 
 | ![RF_solar_position_sunny_day](https://github.com/user-attachments/assets/7a89f703-dfab-4df9-a311-b5f336b25d6c) | ![SPA_solar_position_sunny_day](https://github.com/user-attachments/assets/de0e15b2-a5c5-4b57-a327-5de52a694c28) |
 |-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
