@@ -238,6 +238,8 @@ and NSRDB Data. GitHub Repository: [repository_url]
 # Reference
 Anderson, K., Hansen, C., Holmgren, W., Jensen, A., Mikofski, M., and Driesse, A. “pvlib python: 2023 project update.” Journal of Open Source Software, 8(92), 5994, (2023). DOI: 10.21105/joss.05994.
 
+Meysam Mahooti (2025). NREL's Solar Position Algorithm (SPA) (https://www.mathworks.com/matlabcentral/fileexchange/59903-nrel-s-solar-position-algorithm-spa), MATLAB Central File Exchange. Recuperado 2 julio, 2025.
+
 Sengupta, M., Xie, Y., Lopez, A., Habte, A., Maclaurin, G., Shelby, J., 2018. The National Solar Radiation Data Base (NSRDB). Renew. Sustain. Energy Rev. 89, 51-60. https://doi.org/10.1016/j.rser.2018.03.003.
 
 ## License
