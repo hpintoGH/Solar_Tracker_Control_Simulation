@@ -5,7 +5,7 @@ files = 2018:2023;
 allData = cell(numel(files),1);
 
 for k = 1:numel(files)
-    allData{k} = readtable("spa_solar_position_dataset_" + string(files(k)) + ".csv"); % Files with solar position and enviromental data
+    allData{k} = readtable("spa_solar_position_dataset_" + string(files(k)) + ".csv"); % Files with spa and enviromental data
 end
 
 data = vertcat(allData{:});
@@ -36,7 +36,7 @@ hour_cos = cos(2*pi*hour_decimal/24);
 allData = cell(numel(files),1);
 
 for k = 1:numel(files)    
-    file_name = "mejor_inclinacion_azimut_optimizado_" + string(files(k)) + ".csv";
+    file_name = "mejor_inclinacion_azimut_optimizado_" + string(files(k)) + ".csv"; % Files with best position for irradiance from PVlib
     allData{k} = readtable(fullfile("PVlib_irradiance", file_name));
 end
 best_position = vertcat(allData{:});
