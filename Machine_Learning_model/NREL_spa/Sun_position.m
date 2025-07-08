@@ -1,3 +1,9 @@
+%% Solar Position Calculation using NREL SPA Algorithm
+% This script calculates the solar position (zenith and azimuth angles) 
+% for a specific location over a user-defined time range with customizable 
+% time intervals. It is based on the NREL Solar Position Algorithm (SPA) 
+% implementation for MATLAB by Meysam Mahooti.
+
 clear
 clc
 
