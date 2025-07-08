@@ -45,7 +45,7 @@ Performance comparison tools utilize Python-based irradiance analysis through PV
 
 ### Target Variable
 
-- **Optimal Panel Position** (azimuth and elevation angles)
+- **Optimal Panel Position** (azimuth and tilt angles)
 - **Calculation Method:** PVlib's get_total_irradiance function using the Perez model
 - **Input Parameters:** Solar zenith angle, azimuth angle, DNI, DHI, GHI, extraterrestrial irradiance, and albedo
 - **Optimization Objective:** Maximum total irradiance on tilted panel surface
