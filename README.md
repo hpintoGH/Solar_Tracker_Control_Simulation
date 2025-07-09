@@ -55,7 +55,7 @@ The calculation method employs PVlib's functions using the Perez model for diffu
 - **Test Period**: 2023 (1 year)
 - **Feature Selection**: MRMR (Maximum Relevance Minimum Redundancy) for Random Forest
 - **Deep Learning Optimization**: Iterative variable selection based on Random Forest results
-- **Training Platform**: MATLAB Machine Learning Toolbox for both Random Forest and Deep Learning models
+- **Training Platform**: MATLAB Statistics and Machine Learning Toolbox for both Random Forest and MATLAB Deep Learning Toolbox for MLP model
 
 ## Machine Learning Models
 
