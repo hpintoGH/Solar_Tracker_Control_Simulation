@@ -36,7 +36,7 @@ hour_cos = cos(2*pi*hour_decimal/24);
 allData = cell(numel(files),1);
 
 for k = 1:numel(files)    
-    file_name = "mejor_inclinacion_azimut_optimizado_" + string(files(k)) + ".csv"; % Files with best position for irradiance from PVlib
+    file_name = "optimized_tilt_azimuth_results_" + string(files(k)) + ".csv"; % Files with best position for irradiance from PVlib
     allData{k} = readtable(fullfile("PVlib_irradiance", file_name));
 end
 best_position = vertcat(allData{:});
