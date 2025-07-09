@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')
 
 # Read data
 print("Loading data...")
-df = pd.read_csv("solar_position_data_2018.csv", parse_dates=['datetime']) # File with solar positions
+df = pd.read_csv("Machine_Learning_model\spa_solar_position_dataset_2018.csv", parse_dates=['datetime']) # File with solar positions
 df = df.set_index("datetime")
 
 # Filter only valid daytime data (zenith < 90 and GHI > 0)
