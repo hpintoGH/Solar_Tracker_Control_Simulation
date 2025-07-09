@@ -167,8 +167,6 @@ To visualize simulations with additional data, use the CSV data tables located i
 5. Validate models using 2022 data and test with 2023 data
 6. Use Python PVlib tools for irradiance analysis and performance comparison
 
-**Important**: Models are location-specific. To use this system for locations other than Daytona Beach, Florida, you must retrain both models using local NSRDB data following the same methodology.
-
 # Simulation and Results
 
 The simulation was carried out under two scenarios: a sunny day and a cloudy day. Each case was simulated using both the Random Forest model and the MLP model. The videos for each simulation are available at the following links:
