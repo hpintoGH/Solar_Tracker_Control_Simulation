@@ -85,34 +85,11 @@ The calculation method employs PVlib's functions using the Perez model for diffu
 ### Simulink Model Components
 - **Dual-axis tracking system** with azimuth and elevation control
 - **NEMA 17 stepper motors** (1.8° per step resolution)
-- **Real-time weather data integration**
-- **Model selection interface** (Random Forest or Deep Learning)
 
 ### Test Scenarios
 - **Sunny Day Simulation**: Clear sky conditions from 2023 dataset
 - **Cloudy Day Simulation**: Overcast conditions from 2023 dataset
 - **Comparative Analysis**: ML-based vs. astronomical tracking performance
-
-## File Structure
-
-```
-├── src/
-│   ├── ml_models/           # Trained Random Forest and Deep Learning models
-│   ├── solar_position/      # NREL SPA and PVlib implementations
-│   ├── simulink/           # Simulink models and motor control
-│   ├── data_processing/    # NSRDB data preprocessing scripts
-│   └── feature_selection/  # MRMR and variable selection algorithms
-├── Machine_Learning_model/
-│   ├── nsrdb_raw/          # Raw NSRDB data (2018-2023)
-│   ├── processed/          # Preprocessed training/validation/test sets
-│   └── results/            # Simulation results and performance metrics
-├── Machine_Learning_model/
-│   ├── pvlib_solar_pos/    # Python PVlib solar position calculations
-│   └── irradiance_analysis/ # PVlib-based performance comparison tools
-├── WormAndGearConstraintSupport/
-│   ├── main_simulation.mlx  # Main simulation interface (model selection)
-│   └── test_scenarios/     # Sunny and cloudy day test cases
-```
 
 ## Performance Metrics
 
