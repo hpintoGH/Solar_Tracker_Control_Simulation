@@ -164,8 +164,7 @@ To visualize simulations with additional data, use the CSV data tables located i
 2. Calculate optimal panel positions using the PVlib code Irradiation_pvlib.py
 3. Run MRMR feature selection for Random Forest model in MATLAB
 4. Train Deep Learning model with iterative variable selection in MATLAB
-5. Validate models using 2022 data and test with 2023 data
-6. Use Python PVlib tools for irradiance analysis and performance comparison
+5. Validate and test the model
 
 # Simulation and Results
 
