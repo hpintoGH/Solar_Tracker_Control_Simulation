@@ -207,7 +207,9 @@ Under ideal sunny conditions, the astronomical SPA algorithm operates at optimal
 
 ### Practical Implications
 
-Despite reduced positional precision, the Random Forest model's ability to match SPA performance under clear sky conditions suggests that perfect astronomical tracking may not be necessary for optimal energy collection on sunny days. However, this analysis represents ideal conditions where SPA excels. The ML approach's tolerance for positioning errors while maintaining energy output indicates potential advantages in reduced mechanical complexity, though its true benefits would likely be more apparent during partially cloudy or variable weather conditions where adaptive tracking becomes crucial. 
+Despite reduced positional precision, the Random Forest model's ability to match SPA performance under clear sky conditions suggests that perfect astronomical tracking may not be necessary for optimal energy collection on sunny days. However, this analysis represents ideal conditions where SPA excels. The ML approach's tolerance for positioning errors while maintaining energy output indicates potential advantages in reduced mechanical complexity, though its true benefits would likely be more apparent during partially cloudy or variable weather conditions where adaptive tracking becomes crucial.
+
+The following graph shows a comparison between the solar tracker controlled by the Random Forest model and the astronomical sun-tracking method.
 
 ![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/db803cf3-2db1-4128-9389-b4bd41747c74)
 
@@ -227,8 +229,9 @@ The ML model's success stems from its ability to optimize for diffuse radiation 
 
 This analysis demonstrates that machine learning approaches excel in variable weather conditions where traditional astronomical tracking fails. The ML model's ability to adapt to changing irradiance patterns provides substantial advantages over rigid sun-following algorithms during cloudy periods.
 
-![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/f443b4aa-92f9-4ac4-9da3-f0e133076bde)
+The following graph shows a comparison between the solar tracker controlled by the MLP model (deep learning) and the astronomical sun-tracking method.
 
+![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/f443b4aa-92f9-4ac4-9da3-f0e133076bde)
 
 ## Citation
 
