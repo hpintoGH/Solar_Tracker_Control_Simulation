@@ -145,6 +145,8 @@ To visualize simulations with additional data, use the CSV data tables located i
 
 # Simulation and Results
 
+![Predictions vs actual values](https://github.com/user-attachments/assets/d2d3f80b-1716-4864-aa13-8382e67b4726)
+
 The simulation was carried out under two scenarios: a sunny day and a cloudy day. Each case was simulated using both the Random Forest model and the MLP model. The videos for each simulation are available at the following links:
 
 [Random Forest prediction for sunny day](https://youtu.be/lWYLqjOefW4)
