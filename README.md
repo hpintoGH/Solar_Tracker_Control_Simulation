@@ -46,9 +46,8 @@ Performance comparison tools utilize Python-based irradiance analysis through PV
 ### Target Variable
 
 - **Optimal Panel Position** (azimuth and tilt angles)
-- **Calculation Method:** PVlib's get_total_irradiance function using the Perez model
-- **Input Parameters:** Solar zenith angle, azimuth angle, DNI, DHI, GHI, extraterrestrial irradiance, and albedo
-- **Optimization Objective:** Maximum total irradiance on tilted panel surface
+
+The calculation method employs PVlib's functions using the Perez model for diffuse irradiance calculations. Input parameters include solar zenith angle, azimuth angle, DNI, DHI, GHI, extraterrestrial irradiance, and albedo values, which collectively determine the optimal panel orientation for any given atmospheric condition. The optimization objective focuses on achieving maximum total irradiance on the tilted panel surface, ensuring that the machine learning models learn to predict positions that maximize energy capture.
 
 ### Training Strategy
 - **Training Period**: 2018-2021 (4 years)
