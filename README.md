@@ -60,14 +60,19 @@ The calculation method employs PVlib's functions using the Perez model for diffu
 ## Machine Learning Models
 
 ### Random Forest Model 
-- Feature selection using MRMR algorithm
-- Optimized variable subset for weather-based tracking prediction
-- Robust performance across varying weather conditions
+Target: Optimal panel position calculated via PVlib
+Training: MATLAB Statistics and Machine Learning Toolbox
+Objective: Predict panel angles that maximize total irradiance under given weather conditions
+
+The Random Forest model employs separate optimized variable sets for azimuth and tilt angle predictions. For azimuth angle prediction, the final selected variables include solar azimuth angle, Global Horizontal Irradiance (GHI), month, and sinusoidal hour transformation, capturing both solar geometry and temporal patterns. The tilt angle prediction utilizes solar zenith angle, azimuth angle, Direct Normal Irradiance (DNI), Diffuse Horizontal Irradiance (DHI), and Global Horizontal Irradiance (GHI), incorporating comprehensive solar radiation components alongside positional information.
 
 ### Deep Learning Model (MLP)
-- 4 fully-connected layers
-- Input variables refined through iterative training
-- Enhanced prediction accuracy for complex weather patterns
+Target: Same optimal panel position from PVlib
+Architecture: 4 fully-connected layers
+Training: MATLAB Deep Learning Toolbox
+Enhanced prediction: Complex weather pattern recognition for irradiance maximization
+
+The Multi-Layer Perceptron model features distinct variable configurations for each output angle. Azimuth angle prediction incorporates month, sinusoidal and cosine hour transformations, Global Horizontal Irradiance (GHI), solar azimuth angle, and zenith angle, providing comprehensive temporal and solar position information. For tilt angle prediction, the model utilizes day of year, sinusoidal hour transformation, Direct Normal Irradiance (DNI), Diffuse Horizontal Irradiance (DHI), Global Horizontal Irradiance (GHI), and solar zenith angle, emphasizing radiation components and annual temporal variations for optimal positioning decisions.
 
 ## Solar Position Algorithms
 
