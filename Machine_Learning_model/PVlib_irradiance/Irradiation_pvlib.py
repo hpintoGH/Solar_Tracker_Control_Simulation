@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')
 
 # Read data
 print("Loading data...")
-df = pd.read_csv("solar_position_data.csv", parse_dates=['datetime']) # File with solar positions
+df = pd.read_csv("solar_position_data_2018.csv", parse_dates=['datetime']) # File with solar positions
 df = df.set_index("datetime")
 
 # Filter only valid daytime data (zenith < 90 and GHI > 0)
@@ -87,8 +87,8 @@ for index, row in tqdm(df.iterrows(), total=len(df), desc="Optimizing angles"):
 results_df = pd.DataFrame(results).set_index("datetime")
 
 # Save the results
-results_df.to_csv("optimized_tilt_azimuth_results.csv")
-print(f"\nResults saved in 'optimized_tilt_azimuth_results.csv'")
+results_df.to_csv("optimized_tilt_azimuth_results_2018.csv")
+print(f"\nResults saved in 'optimized_tilt_azimuth_results_2018.csv'")
 
 print(f"DNI_extra range: {df['dni_extra'].min():.0f} - {df['dni_extra'].max():.0f} W/m²")
 print(f"DNI_extra average: {df['dni_extra'].mean():.0f} W/m²")
