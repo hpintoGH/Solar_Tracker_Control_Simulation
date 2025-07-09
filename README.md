@@ -227,6 +227,9 @@ The ML model's success stems from its ability to optimize for diffuse radiation 
 
 This analysis demonstrates that machine learning approaches excel in variable weather conditions where traditional astronomical tracking fails. The ML model's ability to adapt to changing irradiance patterns provides substantial advantages over rigid sun-following algorithms during cloudy periods.
 
+![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/f443b4aa-92f9-4ac4-9da3-f0e133076bde)
+
+
 ## Citation
 
 If you use this work in your research, please cite:
