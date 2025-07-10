@@ -161,13 +161,13 @@ The performance difference suggests that Random Forest's ensemble approach and f
 
 The simulation was carried out under two scenarios: a sunny day and a cloudy day. Each case was simulated using both the Random Forest model and the MLP model. The videos for each simulation are available at the following links:
 
-[Random Forest prediction for sunny day](https://youtu.be/lWYLqjOefW4)
+[Random Forest prediction for a sunny day](https://youtu.be/lWYLqjOefW4)
 
-[Random Forest prediction for cloudy day](https://youtu.be/PSMhTjCeY1U)
+[Random Forest prediction for a cloudy day](https://youtu.be/PSMhTjCeY1U)
 
-[MLP Deep Learning prediction for sunny day](https://youtu.be/OSfu5jRcld8)
+[MLP Deep Learning prediction a for sunny day](https://youtu.be/OSfu5jRcld8)
 
-[MLP Deep Learning prediction for cloudy day](https://youtu.be/UOo1wOEq56s)
+[MLP Deep Learning prediction a for cloudy day](https://youtu.be/UOo1wOEq56s)
 
 ## Solar Tracking Performance Analysis: Random Forest model vs SPA on Clear Sky Conditions
 
