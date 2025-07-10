@@ -45,17 +45,17 @@ Performance comparison tools utilize Python-based irradiance analysis through PV
 
 ### Target Variable
 
-- **Optimal Panel Position** (azimuth and tilt angles)
+- Optimal Panel Position (azimuth and tilt angles)
 
 The calculation method employs PVlib's functions using the Perez model for diffuse irradiance calculations. Input parameters include solar zenith angle, azimuth angle, DNI, DHI, GHI, extraterrestrial irradiance, and albedo values, which collectively determine the optimal panel orientation for any given atmospheric condition. The optimization objective focuses on achieving maximum total irradiance on the tilted panel surface, ensuring that the machine learning models learn to predict positions that maximize energy capture.
 
 ### Training Strategy
-- **Training Period**: 2018-2021 (4 years)
-- **Validation Period**: 2022 (1 year)
-- **Test Period**: 2023 (1 year)
-- **Feature Selection**: MRMR (Maximum Relevance Minimum Redundancy) for Random Forest
-- **Deep Learning Optimization**: Iterative variable selection based on Random Forest results
-- **Training Platform**: MATLAB Statistics and Machine Learning Toolbox for both Random Forest and MATLAB Deep Learning Toolbox for MLP model
+- Training Period: 2018-2021 (4 years)
+- Validation Period: 2022 (1 year)
+- Test Period: 2023 (1 year)
+- Feature Selection: MRMR (Maximum Relevance Minimum Redundancy) for Random Forest
+- Deep Learning Optimization: Iterative variable selection based on Random Forest results
+- Training Platform: MATLAB Statistics and Machine Learning Toolbox for both Random Forest and MATLAB Deep Learning Toolbox for MLP model
 
 ## Machine Learning Models
 
