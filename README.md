@@ -154,7 +154,7 @@ The simulation was carried out under two scenarios: a sunny day and a cloudy day
 
 [Random Forest prediction for cloudy day](https://youtu.be/PSMhTjCeY1U)
 
-## Solar Tracking Performance Analysis: Machine Learning vs SPA on Clear Sky Conditions
+## Solar Tracking Performance Analysis: Random Forest model vs SPA on Clear Sky Conditions
 
 The comparative analysis of a Random Forest machine learning model against the Solar Position Algorithm (SPA) for solar tracking reveals remarkably similar performance metrics during the 13-hour daylight period analyzed on June 27, 2023, under clear sky conditions.
 
@@ -186,7 +186,7 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 ![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/db803cf3-2db1-4128-9389-b4bd41747c74)
 
-## Solar Tracking Performance Analysis: Machine Learning vs SPA on Cloudy Conditions
+## Solar Tracking Performance Analysis: Random Forest model vs SPA on Cloudy Conditions
 
 The comparative analysis on July 31, 2023, under cloudy conditions reveals a reversal in performance between the Random Forest machine learning model and the Solar Position Algorithm (SPA), demonstrating the adaptive advantages of ML-based tracking systems.
 
