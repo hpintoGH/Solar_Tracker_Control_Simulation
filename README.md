@@ -126,9 +126,10 @@ The system employs irradiance-optimized tracking where machine learning models p
 ### Quick start
 1. Clone this repository
 2. To start the simulation, open Solar_tracker_simulation.mlx and read the instructions. It is advisable to execute it section by section, particularly when using an external IDE for the Python code, to prevent potential errors.
-3. Choose the test scenario (sunny/cloudy day) from the data available in the data_for_simulation folder
-4. Select between Random Forest or MLP model
-5. If you plan to run Python code from MATLAB, follow the instructions provided in the script. Otherwise, you will need to use an external IDE and set up the working environment in that IDE for PVlib.
+3. From MATLAB, navigate to the folder Machine_Learning_model to run the model training script ML_solar_tracker.m. Due to the size of the resulting file and GitHub storage limitations, it is not included in the repository.
+4. Choose the test scenario (sunny/cloudy day) from the data available in the data_for_simulation folder
+5. Select between Random Forest or MLP model
+6. If you plan to run Python code from MATLAB, follow the instructions provided in the script. Otherwise, you will need to use an external IDE and set up the working environment in that IDE for PVlib.
 
 To visualize simulations with additional data, use the CSV data tables located in the data_for_simulation folder. You can modify or select the desired time period, although the available data only covers the years 2023 and 2024. If you need more recent or real-time data, you must obtain it from a data provider.
 
