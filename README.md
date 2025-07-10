@@ -88,14 +88,13 @@ The Multi-Layer Perceptron model features distinct variable configurations for e
 ## Simulation Environment
 
 ### Simulink Model Components
-- **Dual-axis tracking system** with azimuth and elevation control
-- **NEMA 17 stepper motors** (1.8° per step resolution)
+- Dual-axis tracking system with azimuth and elevation control
+- NEMA 17 stepper motors (1.8° per step resolution)
 - Stepper motor control based on MathWorks "Stepper Motor with Control" example
 
 ### Test Scenarios
 - **Sunny Day Simulation**: Clear sky conditions from 2023 dataset
 - **Cloudy Day Simulation**: Overcast conditions from 2023 dataset
-- **Comparative Analysis**: ML-based vs. astronomical tracking performance
 
 ## Performance Metrics
 
