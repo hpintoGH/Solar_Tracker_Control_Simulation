@@ -134,7 +134,7 @@ To visualize simulations with additional data, use the CSV data tables located i
 
 **Note**: The trained models are specifically optimized for Daytona Beach, Florida conditions. For other locations, you'll need to retrain the models using the provided scripts with location-specific NSRDB data or other sources.
 
-### Model Training for a different location (Optional)
+### Model training for a different location (optional)
 1. Calculate the astronomical position of the sun for the geographic location and the training, validation, and test periods. You can use the adapted MATLAB version of the NREL SPA code found in the NREL_spa folder, or other tools such as the NOAA Solar Calculator or PVlib.
 2. Obtain environmental variable data such as DNI, DHI, GHI, wind speed, and relative humidity — or additional variables if needed. You can use the NSRDB (National Solar Radiation Database) as a data source.
 3. Calculate optimal panel positions using the PVlib code Irradiation_pvlib.py
@@ -168,11 +168,11 @@ The simulation was carried out under two scenarios: a sunny day and a cloudy day
 
 [MLP Deep Learning prediction a for cloudy day](https://youtu.be/UOo1wOEq56s)
 
-## Solar Tracking Performance Analysis: Random Forest model vs SPA on Clear Sky Conditions
+### Solar Tracking Performance Analysis: Random Forest model vs SPA on Clear Sky Conditions
 
 The comparative analysis of a Random Forest machine learning model against the Solar Position Algorithm (SPA) for solar tracking reveals remarkably similar performance metrics during the 13-hour daylight period analyzed on June 27, 2023, under clear sky conditions.
 
-### Performance Equivalence
+#### Performance Equivalence
 
 Both tracking systems demonstrated nearly identical energy collection capabilities, with the ML model achieving 99.9% efficiency compared to the astronomical SPA method. The ML system generated 9.77 kWh/m² versus 9.78 kWh/m² for SPA, representing only a 0.1% difference in daily energy output. Both tracking systems significantly outperformed the baseline global horizontal irradiance (GHI) of 7.62 kWh/m², with energy gains of 2.15 kWh/m² (28.3%) and 2.17 kWh/m² (28.5%) respectively.
 
@@ -184,15 +184,15 @@ Both tracking systems demonstrated nearly identical energy collection capabiliti
 | Maximum ML POA:              | 993.3 | Astronomical tracking gain:      | 56.9% | Max positive difference:      | 4.9 W/m²  |
 | Maximum Astronomical POA:    | 993.3 | ML efficiency (vs Astronomical): | 99.9% | Max negative difference:      | -0.8 W/m² |
 
-### Tracking Accuracy Trade-offs
+#### Tracking Accuracy Trade-offs
 
 While performance outcomes were equivalent, the tracking methodologies differed significantly. The SPA algorithm maintained superior positional accuracy with an average angle of incidence (AOI) of 2.0° compared to the ML model's 7.2°. The positional differences between the two systems showed a mean absolute error of 5.1° in tilt positioning and 0.6° in azimuth positioning, indicating that the ML model's largest deviations from SPA occur in the tilt axis.
 
-### Clear Sky Advantage for SPA
+#### Clear Sky Advantage for SPA
 
 Under ideal sunny conditions, the astronomical SPA algorithm operates at optimal efficiency since direct solar radiation patterns are predictable and consistent. The absence of cloud interference allows precise sun positioning to maximize energy capture effectively. The ML model's ability to match this performance demonstrates its competence under clear sky scenarios, though the true advantage of machine learning approaches typically emerges under variable weather conditions where cloud movement and diffuse radiation patterns require adaptive tracking strategies.
 
-### Practical Implications
+#### Practical Implications
 
 Despite reduced positional precision, the Random Forest model's ability to match SPA performance under clear sky conditions suggests that perfect astronomical tracking may not be necessary for optimal energy collection on sunny days. However, this analysis represents ideal conditions where SPA excels. The ML approach's tolerance for positioning errors while maintaining energy output indicates potential advantages in reduced mechanical complexity, though its true benefits would likely be more apparent during partially cloudy or variable weather conditions where adaptive tracking becomes crucial.
 
@@ -200,19 +200,19 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 ![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/db803cf3-2db1-4128-9389-b4bd41747c74)
 
-## Solar Tracking Performance Analysis: Random Forest model vs SPA on Cloudy Conditions
+### Solar Tracking Performance Analysis: Random Forest model vs SPA on Cloudy Conditions
 
 The comparative analysis on July 31, 2023, under cloudy conditions reveals a reversal in performance between the Random Forest machine learning model and the Solar Position Algorithm (SPA), demonstrating the adaptive advantages of ML-based tracking systems.
 
-### Machine Learning Superiority in Variable Conditions
+#### Machine Learning Superiority in Variable Conditions
 
 Under cloudy skies, the ML model outperformed the astronomical SPA algorithm, achieving 109.4% efficiency compared to SPA. The ML system generated 4.59 kWh/m² versus 4.50 kWh/m² for SPA, representing a 2.0% energy advantage. More remarkably, while the ML model maintained a positive tracking gain of 0.9% over baseline GHI, the SPA system actually performed worse than horizontal irradiance with a -6.8% tracking loss.
 
-### Adaptive Tracking Under Diffuse Conditions
+#### Adaptive Tracking Under Diffuse Conditions
 
 The ML model's success stems from its ability to optimize for diffuse radiation patterns rather than direct solar positioning. Despite maintaining large positional differences from SPA (25.8° mean absolute tilt error), the ML system's adaptive approach captured more available irradiance. The astronomical algorithm's precision in sun-tracking became counterproductive when cloud cover created predominantly diffuse lighting conditions.
 
-### Performance Implications
+#### Performance Implications
 
 This analysis demonstrates that machine learning approaches excel in variable weather conditions where traditional astronomical tracking fails. The ML model's ability to adapt to changing irradiance patterns provides substantial advantages over rigid sun-following algorithms during cloudy periods.
 
