@@ -25,10 +25,10 @@ Performance comparison tools utilize Python-based irradiance analysis through PV
 ## Dataset and Training
 
 ### Data Source
-- **NSRDB (National Solar Radiation Database)** - 6 years of data (2018-2023)
-- **Location**: Daytona Beach, Florida
-- **Temporal Resolution**: 10-minute intervals
-- **Geographic Scope**: Location-specific training (models optimized for Florida climate conditions)
+- NSRDB (National Solar Radiation Database) - 6 years of data (2018-2023)
+- Location: Daytona Beach, Florida
+- Temporal Resolution: 10-minute intervals
+- Geographic Scope: Location-specific training (models optimized for Florida climate conditions)
 
 ### Input Variables
 - Month
@@ -78,8 +78,8 @@ The Multi-Layer Perceptron model features distinct variable configurations for e
 
 ### Primary: NREL's Solar Position Algorithm (SPA)
 - Implementation: Meysam Mahooti's MATLAB adaptation
-- **Reference**: Meysam Mahooti (2025). NREL's Solar Position Algorithm (SPA), MATLAB Central File Exchange
-- **Custom Integration**: Script for performing time-based calculations with user-defined intervals
+- Reference: Meysam Mahooti (2025). NREL's Solar Position Algorithm (SPA), MATLAB Central File Exchange
+- Custom Integration: Script for performing time-based calculations with user-defined intervals
 
 ### Alternative:
 - Python PVlib Integration
@@ -93,15 +93,15 @@ The Multi-Layer Perceptron model features distinct variable configurations for e
 - Stepper motor control based on MathWorks "Stepper Motor with Control" example
 
 ### Test Scenarios
-- **Sunny Day Simulation**: Clear sky conditions from 2023 dataset
-- **Cloudy Day Simulation**: Overcast conditions from 2023 dataset
+- Sunny Day Simulation: Clear sky conditions from 2023 dataset
+- Cloudy Day Simulation: Overcast conditions from 2023 dataset
 
 ## Performance Metrics
 
 ### Tracking Accuracy
-- **ML Model Precision**: Comparison against astronomical tracking
-- **Irradiance Capture Efficiency**: Energy collection optimization
-- **Weather Adaptation**: Performance under varying conditions
+- ML Model Precision: Comparison against astronomical tracking
+- Irradiance Capture Efficiency: Energy collection optimization
+- Weather Adaptation: Performance under varying conditions
 
 ## Research Applications
 
