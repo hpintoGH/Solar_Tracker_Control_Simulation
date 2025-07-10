@@ -153,9 +153,11 @@ Random Forest demonstrated significantly lower error rates, with MSE values of 0
 
 The relatively low azimuth errors in both models likely stem from the fact that optimal azimuth calculated by PVlib closely resembles the predictable astronomical solar azimuth. The greater variation occurs in tilt angle, which must adapt to momentary conditions such as cloud cover and atmospheric changes, making it the more challenging parameter to predict accurately.
 
-The performance difference suggests that Random Forest's ensemble approach and feature handling capabilities are particularly well-suited for solar tracking applications, providing more precise and reliable predictions than the deep learning alternative.
+The performance difference suggests that Random Forest's ensemble approach and feature handling capabilities are particularly well-suited for solar tracking applications, providing more precise and reliable predictions than the deep learning alternative. The graph below compares the predicted values from each model with the actual target values for both azimuth and tilt angles.
 
 ![Predictions vs actual values](https://github.com/user-attachments/assets/d2d3f80b-1716-4864-aa13-8382e67b4726)
+
+## Simulink Simulation
 
 The simulation was carried out under two scenarios: a sunny day and a cloudy day. Each case was simulated using both the Random Forest model and the MLP model. The videos for each simulation are available at the following links:
 
