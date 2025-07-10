@@ -134,7 +134,7 @@ To visualize simulations with additional data, use the CSV data tables located i
 
 **Note**: The trained models are specifically optimized for Daytona Beach, Florida conditions. For other locations, you'll need to retrain the models using the provided scripts with location-specific NSRDB data or other sources.
 
-### Model Training (Optional)
+### Model Training for a different location (Optional)
 1. Calculate the astronomical position of the sun for the geographic location and the training, validation, and test periods. You can use the adapted MATLAB version of the NREL SPA code found in the NREL_spa folder, or other tools such as the NOAA Solar Calculator or PVlib.
 2. Obtain environmental variable data such as DNI, DHI, GHI, wind speed, and relative humidity — or additional variables if needed. You can use the NSRDB (National Solar Radiation Database) as a data source.
 3. Calculate optimal panel positions using the PVlib code Irradiation_pvlib.py
