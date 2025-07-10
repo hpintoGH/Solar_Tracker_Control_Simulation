@@ -149,7 +149,9 @@ The comparative analysis between Random Forest and MLP Deep Learning models for 
 
 Random Forest demonstrated significantly lower error rates, with MSE values of 0.076 (azimuth) and 0.730 (tilt) versus Deep Learning's 13.629 and 29.179. The Mean Absolute Errors were also substantially lower: 0.196° vs 3.074° for azimuth, and 0.409° vs 2.572° for tilt.
 
-This performance difference suggests that Random Forest's ensemble approach and feature handling capabilities are particularly well-suited for solar tracking applications, providing more precise and reliable predictions than the deep learning alternative.
+The relatively low azimuth errors in both models likely stem from the fact that optimal azimuth calculated by PVlib closely resembles the predictable astronomical solar azimuth. The greater variation occurs in tilt angle, which must adapt to momentary conditions such as cloud cover and atmospheric changes, making it the more challenging parameter to predict accurately.
+
+The performance difference suggests that Random Forest's ensemble approach and feature handling capabilities are particularly well-suited for solar tracking applications, providing more precise and reliable predictions than the deep learning alternative.
 
 ![Predictions vs actual values](https://github.com/user-attachments/assets/d2d3f80b-1716-4864-aa13-8382e67b4726)
 
