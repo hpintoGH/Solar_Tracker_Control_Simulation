@@ -210,6 +210,10 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 <img width="4771" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/7cc11903-821b-471f-ba08-23dca8dcaf3b" />
 
+### Solar Tracking Performance Analysis: MLP Deep Learning model vs SPA on Cloudy Conditions
+
+<img width="4770" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/9abb9b38-68b7-4b81-9ce4-aa56d710274e" />
+
 ## Citation
 
 If you use this work in your research, please cite:
