@@ -93,7 +93,8 @@ The Multi-Layer Perceptron model features distinct variable configurations for e
 ### Test Scenarios
 - Sunny Day Simulation: Clear sky conditions from 2023 dataset
 - Cloudy Day Simulation: Overcast conditions from 2023 dataset
-- Data sampled every 30 minutes, where each time step corresponds to 1 second in the simulation.
+
+In both scenarios data is sampled every 30 minutes, where each time step corresponds to 1 second in the simulation.
 
 ## Research Applications
 
