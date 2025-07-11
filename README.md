@@ -94,13 +94,6 @@ The Multi-Layer Perceptron model features distinct variable configurations for e
 - Sunny Day Simulation: Clear sky conditions from 2023 dataset
 - Cloudy Day Simulation: Overcast conditions from 2023 dataset
 
-## Performance Metrics
-
-### Tracking Accuracy
-- ML Model Precision: Comparison against astronomical tracking
-- Irradiance Capture Efficiency: Energy collection optimization
-- Weather Adaptation: Performance under varying conditions
-
 ## Research Applications
 
 This project serves multiple research domains, providing a comprehensive framework for intelligent solar tracking through weather-predictive panel positioning that goes beyond traditional astronomical methods. The implementation offers valuable insights for machine learning applications in renewable energy, particularly through comparative analysis of Random Forest and Deep Learning models for solar optimization tasks. Additionally, the project serves as an educational resource for control systems engineering, featuring Simulink modeling techniques that integrate machine learning predictions with hardware simulation for dual-axis solar tracking mechanisms.
