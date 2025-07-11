@@ -206,6 +206,8 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 ![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/f443b4aa-92f9-4ac4-9da3-f0e133076bde)
 
+<img width="4771" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/7cc11903-821b-471f-ba08-23dca8dcaf3b" />
+
 ## Citation
 
 If you use this work in your research, please cite:
