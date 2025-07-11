@@ -1,6 +1,6 @@
 # Solution to MATLAB and Simulink Challenge project 249 Solar Tracker Control Simulation
 
-[Program link](https://github.com/mathworks/MATLAB-Simulink-Challenge-Project-Hub)
+[MATLAB and Simulink Challenge Program](https://github.com/mathworks/MATLAB-Simulink-Challenge-Project-Hub)
 
 [Solar Tracker Control Simulation](https://github.com/mathworks/MATLAB-Simulink-Challenge-Project-Hub/tree/main/projects/Solar%20Tracker%20Control%20Simulation)
 
