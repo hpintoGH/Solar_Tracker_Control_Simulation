@@ -204,7 +204,9 @@ This analysis demonstrates that machine learning approaches excel in variable we
 
 The graph below presents a comparison between solar tracking controlled by the Random Forest model and astronomical tracking, using data from a **cloudy day**.
 
-![ml_vs_astronomical_tracking_comparison](https://github.com/user-attachments/assets/f443b4aa-92f9-4ac4-9da3-f0e133076bde)
+<img width="4770" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/d39fd723-f73c-4838-95b7-864e5ef0f31d" />
+
+### Solar Tracking Performance Analysis: MLP Deep Learning model vs SPA on Clear Sky Conditions
 
 <img width="4771" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/7cc11903-821b-471f-ba08-23dca8dcaf3b" />
 
