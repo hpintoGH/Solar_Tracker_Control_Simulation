@@ -216,7 +216,7 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 <img width="4770" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/9abb9b38-68b7-4b81-9ce4-aa56d710274e" />
 
-## Energy Storage Comparison
+## Comparison of energy storage on a cloudy day
 
 <img width="2928" height="1502" alt="image" src="https://github.com/user-attachments/assets/b9cb25d8-1d30-411a-8cf4-27bbd3ff3154" />
 
