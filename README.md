@@ -219,7 +219,7 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 ## Comparison of energy storage on a cloudy day
 
-<img width="2928" height="1502" alt="image" src="https://github.com/user-attachments/assets/b9cb25d8-1d30-411a-8cf4-27bbd3ff3154" />
+<img width="1165" height="746" alt="image" src="https://github.com/user-attachments/assets/5b6ea04c-0abe-4764-886c-781e4c1c2ea4" />
 
 Based on the simulation results for cloudy conditions, using machine learning for solar tracking yields a nearly identical battery SOC compared to the traditional SPA method, with only a 0.94% difference. This suggests little advantage in terms of stored energy under the simulated scenario. While this improvement may seem modest, it could become significant over long-term operation, in locations with frequent cloud cover, or when bifacial panels are used.
 
