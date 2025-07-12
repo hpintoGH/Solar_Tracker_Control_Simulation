@@ -120,7 +120,7 @@ The system employs irradiance-optimized tracking where machine learning models p
 - Python 3.9+ with PVlib library and Matplotlib (for irradiance analysis)
 
 ### Quick start
-1. Download ZIP to get a copy
+1. Download the ZIP to get a copy
 2. To start the simulation, open Solar_tracker_simulation.mlx and read the instructions. It is advisable to execute it section by section, particularly when using an external IDE for the Python code, to prevent potential errors.
 3. From MATLAB, navigate to the folder Machine_Learning_model to run the model training script ML_solar_tracker.m. Due to the size of the resulting file and GitHub storage limitations, it is not included in the repository.
 4. Once you have trained the models, in Solar_tracker_simulation.mlx choose the test scenario (sunny/cloudy day) from the data available in the data_for_simulation folder
