@@ -1,4 +1,5 @@
-# Solution to MATLAB and Simulink Challenge project 249 Solar Tracker Control Simulation
+# Solar Tracker Control System using Machine Learning 
+## *Solution to MATLAB and Simulink Challenge project 249 Solar Tracker Control Simulation*
 
 [MATLAB and Simulink Challenge Program](https://github.com/mathworks/MATLAB-Simulink-Challenge-Project-Hub)
 
