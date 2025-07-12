@@ -229,14 +229,6 @@ Based on the simulation results for cloudy conditions, using machine learning fo
 
 It is important to note that these findings are based on simulations, not real-world measurements. Factors such as sensor noise, shading variability, and system dynamics may affect actual performance. Therefore, while machine learning shows promising results and generalization potential, its practical benefits should be validated through field experiments. Overall, it can be considered a viable and potentially superior alternative to SPA under specific environmental conditions.
 
-## Citation
-
-If you use this work in your research, please cite:
-```
-[Your Name] (2025). Intelligent Solar Tracker Control System using Machine Learning 
-and NSRDB Data. GitHub Repository: [repository_url]
-```
-
 # Reference
 Anderson, K., Hansen, C., Holmgren, W., Jensen, A., Mikofski, M., and Driesse, A. “pvlib python: 2023 project update.” Journal of Open Source Software, 8(92), 5994, (2023). DOI: 10.21105/joss.05994.
 
