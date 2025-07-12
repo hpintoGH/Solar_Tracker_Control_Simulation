@@ -216,6 +216,14 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 <img width="4770" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/9abb9b38-68b7-4b81-9ce4-aa56d710274e" />
 
+## Energy Storage Comparison
+
+<img width="2928" height="1502" alt="image" src="https://github.com/user-attachments/assets/b9cb25d8-1d30-411a-8cf4-27bbd3ff3154" />
+
+Based on the simulation results for cloudy conditions, using machine learning for solar tracking yields a nearly identical battery SOC compared to the traditional SPA method, with only a 0.36% difference. This suggests little advantage in terms of stored energy under the simulated scenario. However, analysis with PVlib showed that the Random Forest model achieved 2% higher energy efficiency on a cloudy day (in kWh/m²). While this improvement may seem modest, it could become significant over long-term operation, in locations with frequent cloud cover, or when bifacial panels are used.
+
+It is important to note that these findings are based on simulations, not real-world measurements. Factors such as sensor noise, shading variability, and system dynamics may affect actual performance. Therefore, while machine learning shows promising results and generalization potential, its practical benefits should be validated through field experiments. Overall, it can be considered a viable and potentially superior alternative to SPA under specific environmental conditions.
+
 ## Citation
 
 If you use this work in your research, please cite:
