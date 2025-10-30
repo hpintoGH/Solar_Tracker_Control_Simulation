@@ -189,7 +189,7 @@ Despite reduced positional precision, the Random Forest model's ability to match
 
 The graph below presents a comparison between solar tracking controlled by the Random Forest model and astronomical tracking, using data from a **sunny day**.
 
-<img width="4770" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/b3b7f300-51cd-4f9b-a1b4-15bc70370dd8" />
+<img width="926" height="577" alt="image" src="https://github.com/user-attachments/assets/01438d5f-18f5-4d79-ba7b-461e6457bb4f" />
 
 
 ### Solar Tracking Performance Analysis: Random Forest model vs SPA on Cloudy Conditions
