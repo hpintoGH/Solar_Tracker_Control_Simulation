@@ -19,7 +19,7 @@ The system implements machine learning-based tracking through two trained models
 
 Real-world data integration forms the foundation of the system through the comprehensive NSRDB (National Solar Radiation Database) dataset spanning 2018-2023, providing six years of high-resolution meteorological and solar radiation data. The simulation environment encompasses a complete Simulink model featuring NEMA 17 stepper motor control systems that represent the mechanical aspects of dual-axis solar tracking hardware.
 
-Performance comparison tools utilize Python-based irradiance analysis through PVlib libraries, enabling detailed comparisons between machine learning predictions and traditional astronomical tracking methods. The location-specific training approach focuses on Daytona Beach, Florida conditions, selected arbitrarily within the United States due to the availability and accessibility of high-resolution temporal and spatial data necessary for robust model development. The system incorporates flexible solar position calculation capabilities through multiple algorithms, including NREL's Solar Position Algorithm (SPA) for precise astronomical calculations and Python PVlib integration for comprehensive irradiance modeling and validation.
+The performance comparison tools employ irradiance analysis from the PVLIB MATLAB toolbox, allowing detailed evaluation of machine learning predictions against traditional astronomical tracking approaches. The location-specific training approach focuses on Daytona Beach, Florida conditions, selected arbitrarily within the United States due to the availability and accessibility of high-resolution temporal and spatial data necessary for robust model development. The system incorporates flexible solar position calculation capabilities using multiple algorithms, including NREL’s Solar Position Algorithm (SPA) for precise astronomical computations and MATLAB PVLIB integration for comprehensive irradiance modeling and validation.
 
 ## Dataset and Training
 
@@ -46,7 +46,7 @@ Performance comparison tools utilize Python-based irradiance analysis through PV
 
 - Optimal Panel Position (azimuth and tilt angles)
 
-The calculation method employs PVlib's functions using the Perez model for diffuse irradiance calculations. Input parameters include solar zenith angle, azimuth angle, DNI, DHI, GHI, extraterrestrial irradiance, and albedo values, which collectively determine the optimal panel orientation for any given atmospheric condition. The optimization objective focuses on achieving maximum total irradiance on the tilted panel surface, ensuring that the machine learning models learn to predict positions that maximize energy capture.
+The calculation method employs PVLIB's functions using the Perez model for diffuse irradiance calculations. Input parameters include solar zenith angle, azimuth angle, DNI, DHI, GHI, extraterrestrial irradiance, and albedo values, which collectively determine the optimal panel orientation for any given atmospheric condition. The optimization objective focuses on achieving maximum total irradiance on the tilted panel surface, ensuring that the machine learning models learn to predict positions that maximize energy capture.
 
 ### Training Strategy
 - Training Period: 2018-2021 (4 years)
@@ -59,14 +59,14 @@ The calculation method employs PVlib's functions using the Perez model for diffu
 ## Machine Learning Models
 
 ### Random Forest Model 
-- Target: Optimal panel position calculated via PVlib
+- Target: Optimal panel position calculated via PVLIB
 - Training: MATLAB Statistics and Machine Learning Toolbox
 - Objective: Predict panel angles that maximize total irradiance under given weather conditions
 
 The Random Forest model employs separate optimized variable sets for azimuth and tilt angle predictions. For azimuth angle prediction, the final selected variables include solar azimuth angle, Global Horizontal Irradiance (GHI), month, and sinusoidal hour transformation, capturing both solar geometry and temporal patterns. The tilt angle prediction utilizes solar zenith angle, azimuth angle, Direct Normal Irradiance (DNI), Diffuse Horizontal Irradiance (DHI), and Global Horizontal Irradiance (GHI), incorporating comprehensive solar radiation components alongside positional information.
 
 ### Deep Learning Model (MLP)
-- Target: Same optimal panel position from PVlib
+- Target: Same optimal panel position from PVLIB
 - Architecture: 4 fully-connected layers
 - Training: MATLAB Deep Learning Toolbox
 - Enhanced prediction: Complex weather pattern recognition for irradiance maximization
@@ -81,7 +81,7 @@ The Multi-Layer Perceptron model features distinct variable configurations for e
 - Custom Integration: Script for performing time-based calculations with user-defined intervals
 
 ### Alternative:
-- Python PVlib Integration
+- Matlab PVlib Integration
 - NOAA Solar Calculator
 
 ## Simulation Environment
@@ -103,7 +103,7 @@ This project serves multiple research domains, providing a comprehensive framewo
 
 ## Key Innovations
 
-The system employs irradiance-optimized tracking where machine learning models predict panel positions that maximize total irradiance using PVlib, moving beyond sun-following algorithms to weather-driven optimization that accounts for atmospheric conditions affecting solar radiation. The comprehensive data integration approach utilizes a six-year NSRDB dataset with 10-minute temporal resolution, providing robust training data that captures seasonal variations and weather patterns specific to the Daytona Beach location. The dual algorithm methodology compares Random Forest and Deep Learning approaches for optimal positioning predictions, offering insights into model performance under varying atmospheric conditions. The physics-based target generation employs the Perez model for diffuse irradiance calculations, ensuring that the machine learning models learn from  optimal positions. Finally, the real-world validation framework uses actual weather scenarios from the 2023 dataset with irradiance-based performance metrics, demonstrating practical applicability of the predictive models under diverse meteorological conditions.
+The system employs irradiance-optimized tracking where machine learning models predict panel positions that maximize total irradiance using PVLIB, moving beyond sun-following algorithms to weather-driven optimization that accounts for atmospheric conditions affecting solar radiation. The comprehensive data integration approach utilizes a six-year NSRDB dataset with 10-minute temporal resolution, providing robust training data that captures seasonal variations and weather patterns specific to the Daytona Beach location. The dual algorithm methodology compares Random Forest and Deep Learning approaches for optimal positioning predictions, offering insights into model performance under varying atmospheric conditions. The physics-based target generation employs the Perez model for diffuse irradiance calculations, ensuring that the machine learning models learn from  optimal positions. Finally, the real-world validation framework uses actual weather scenarios from the 2023 dataset with irradiance-based performance metrics, demonstrating practical applicability of the predictive models under diverse meteorological conditions.
 
 # How to run section
 
@@ -118,7 +118,7 @@ The system employs irradiance-optimized tracking where machine learning models p
 - MATLAB Statistics and Machine Learning Toolbox
 - MATLAB Deep Learning Toolbox
 - MATLAB Parallel Computing Toolbox if you have a compatible NVIDIA GPU
-- Python 3.9+ with PVlib library and Matplotlib (for irradiance analysis)
+- PV_LIB Toolbox by Sandia National Lab
 
 ### Quick start
 1. Download the ZIP to get a copy
@@ -126,16 +126,15 @@ The system employs irradiance-optimized tracking where machine learning models p
 3. From MATLAB, navigate to the folder Machine_Learning_model to run the model training script ML_solar_tracker.m. Due to the size of the resulting file and GitHub storage limitations, it is not included in the repository.
 4. Once you have trained the models, in Solar_tracker_simulation.mlx choose the test scenario (sunny/cloudy day) from the data available in the data_for_simulation folder
 5. Select between Random Forest or MLP model
-6. If you plan to run Python code from MATLAB, follow the instructions provided in the script. Otherwise, you will need to use an external IDE and set up the working environment in that IDE for PVlib.
 
 To visualize simulations with additional data, use the CSV data tables located in the data_for_simulation folder. You can modify or select the desired time period, although the available data only covers the years 2023 and 2024. If you need more recent or real-time data, you must obtain it from a data provider.
 
 **Note**: The trained models are specifically optimized for Daytona Beach, Florida conditions. For other locations, you'll need to retrain the models using the provided scripts with location-specific NSRDB data or other sources.
 
 ### Model training for a different location (optional)
-1. Calculate the astronomical position of the sun for the geographic location and the training, validation, and test periods. You can use the adapted MATLAB version of the NREL SPA code found in the NREL_spa folder, or other tools such as the NOAA Solar Calculator or PVlib.
+1. Calculate the astronomical position of the sun for the geographic location and the training, validation, and test periods. You can use the adapted MATLAB version of the NREL SPA code found in the NREL_spa folder, or other tools such as the NOAA Solar Calculator or PVLIB.
 2. Obtain environmental variable data such as DNI, DHI, GHI, wind speed, and relative humidity — or additional variables if needed. You can use the NSRDB (National Solar Radiation Database) as a data source.
-3. Calculate optimal panel positions using the PVlib code Irradiation_pvlib.py
+3. Calculate optimal panel positions using the PVLIB code Irradiation_pvlib.py
 4. Run MRMR feature selection for Random Forest model in MATLAB
 5. Train Deep Learning model with iterative variable selection in MATLAB
 6. Validate and test the model
@@ -148,7 +147,7 @@ The comparative analysis between Random Forest and MLP Deep Learning models for 
 
 Random Forest demonstrated significantly lower error rates, with MSE values of 0.076 (azimuth) and 0.730 (tilt) versus Deep Learning's 13.629 and 29.179. The Mean Absolute Errors were also substantially lower: 0.196° vs 3.074° for azimuth, and 0.409° vs 2.572° for tilt.
 
-The relatively low azimuth errors in both models likely stem from the fact that optimal azimuth calculated by PVlib closely resembles the predictable astronomical solar azimuth. The greater variation occurs in tilt angle, which must adapt to momentary conditions such as cloud cover and atmospheric changes, making it the more challenging parameter to predict accurately.
+The relatively low azimuth errors in both models likely stem from the fact that optimal azimuth calculated by PVLIB closely resembles the predictable astronomical solar azimuth. The greater variation occurs in tilt angle, which must adapt to momentary conditions such as cloud cover and atmospheric changes, making it the more challenging parameter to predict accurately.
 
 The performance difference suggests that Random Forest's ensemble approach and feature handling capabilities are particularly well-suited for solar tracking applications, providing more precise and reliable predictions than the deep learning alternative. The graph below compares the predicted values from each model with the actual target values for both azimuth and tilt angles.
 
@@ -231,7 +230,7 @@ Based on the simulation results for cloudy conditions, using machine learning fo
 It is important to note that these findings are based on simulations, not real-world measurements. Factors such as sensor noise, shading variability, and system dynamics may affect actual performance. Therefore, while machine learning shows promising results and generalization potential, its practical benefits should be validated through field experiments. Overall, it can be considered a viable and potentially superior alternative to SPA under specific environmental conditions.
 
 # Reference
-Anderson, K., Hansen, C., Holmgren, W., Jensen, A., Mikofski, M., and Driesse, A. “pvlib python: 2023 project update.” Journal of Open Source Software, 8(92), 5994, (2023). DOI: 10.21105/joss.05994.
+Anderson, K., Hansen, C., Holmgren, W., Jensen, A., Mikofski, M., and Driesse, A. “pvlib python: 2023 project update.” Journal of Open Source Software, 8(92), 5994, (2023). https://doi.org/10.21105/joss.05994
 
 Meysam Mahooti (2025). NREL's Solar Position Algorithm (SPA) (https://www.mathworks.com/matlabcentral/fileexchange/59903-nrel-s-solar-position-algorithm-spa), MATLAB Central File Exchange. Retrieved July 2, 2025.
 
