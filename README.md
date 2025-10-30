@@ -215,11 +215,11 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 ### Solar Tracking Performance Analysis: MLP Deep Learning model vs SPA on Clear Sky Conditions
 
-<img width="4771" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/7cc11903-821b-471f-ba08-23dca8dcaf3b" />
+<img width="911" height="563" alt="image" src="https://github.com/user-attachments/assets/d75d8fe8-7f41-4acf-9d09-c21192ca8829" />
 
 ### Solar Tracking Performance Analysis: MLP Deep Learning model vs SPA on Cloudy Conditions
 
-<img width="4770" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/9abb9b38-68b7-4b81-9ce4-aa56d710274e" />
+<img width="907" height="572" alt="image" src="https://github.com/user-attachments/assets/92a46e7b-c2bf-45b9-950e-0c8cf1c12cb8" />
 
 ## Comparison of energy storage on a cloudy day
 
