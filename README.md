@@ -210,7 +210,7 @@ This analysis demonstrates that machine learning approaches excel in variable we
 
 The graph below presents a comparison between solar tracking controlled by the Random Forest model and astronomical tracking, using data from a **cloudy day**.
 
-<img width="4770" height="3543" alt="ml_vs_astronomical_tracking_comparison" src="https://github.com/user-attachments/assets/d39fd723-f73c-4838-95b7-864e5ef0f31d" />
+<img width="919" height="587" alt="ml_vs_astronomical_tracking_comparison_Matlab" src="https://github.com/user-attachments/assets/6fc91730-c6be-4462-bacc-5c4ffa264f47" />
 
 
 ### Solar Tracking Performance Analysis: MLP Deep Learning model vs SPA on Clear Sky Conditions
@@ -223,7 +223,7 @@ The graph below presents a comparison between solar tracking controlled by the R
 
 ## Comparison of energy storage on a cloudy day
 
-<img width="745" height="477" alt="image" src="https://github.com/user-attachments/assets/5b6ea04c-0abe-4764-886c-781e4c1c2ea4" />
+<img width="887" height="569" alt="image" src="https://github.com/user-attachments/assets/98348c8f-2bc2-475d-b40a-1ba7ec33cb83" />
 
 
 Based on the simulation results for cloudy conditions, using machine learning for solar tracking yields a nearly identical battery SOC compared to the traditional SPA method, with only a 0.94% difference. This suggests little advantage in terms of stored energy under the simulated scenario. While this improvement may seem modest, it could become significant over long-term operation, in locations with frequent cloud cover, or when bifacial panels are used.
