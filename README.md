@@ -117,7 +117,7 @@ The system employs irradiance-optimized tracking where machine learning models p
 - Simscape Electrical
 - MATLAB Statistics and Machine Learning Toolbox
 - MATLAB Deep Learning Toolbox
-- MATLAB Parallel Computing Toolbox if you have a compatible NVIDIA GPU
+- MATLAB Parallel Computing Toolbox
 - PV_LIB Toolbox by Sandia National Lab
 
 ### Quick start
