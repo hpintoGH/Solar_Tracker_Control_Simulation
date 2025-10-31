@@ -230,11 +230,11 @@ Based on the simulation results for cloudy conditions, using machine learning fo
 It is important to note that these findings are based on simulations, not real-world measurements. Factors such as sensor noise, shading variability, and system dynamics may affect actual performance. Therefore, while machine learning shows promising results and generalization potential, its practical benefits should be validated through field experiments. Overall, it can be considered a viable and potentially superior alternative to SPA under specific environmental conditions.
 
 # Reference
-Anderson, K., Hansen, C., Holmgren, W., Jensen, A., Mikofski, M., and Driesse, A. “pvlib python: 2023 project update.” Journal of Open Source Software, 8(92), 5994, (2023). https://doi.org/10.21105/joss.05994
-
 Meysam Mahooti (2025). NREL's Solar Position Algorithm (SPA) (https://www.mathworks.com/matlabcentral/fileexchange/59903-nrel-s-solar-position-algorithm-spa), MATLAB Central File Exchange. Retrieved July 2, 2025.
 
 National Oceanic and Atmospheric Administration. NOWData—NOAA Online Weather Data. National Weather Service. Retrieved June 12, 2025, de https://www.weather.gov/wrh/Climate?wfo=mlb
+
+Sandia National Laboratories. MATLAB_PV_LIB Toolbox. https://github.com/sandialabs/MATLAB_PV_LIB
 
 Sengupta, M., Xie, Y., Lopez, A., Habte, A., Maclaurin, G., Shelby, J., 2018. The National Solar Radiation Data Base (NSRDB). Renew. Sustain. Energy Rev. 89, 51-60. https://doi.org/10.1016/j.rser.2018.03.003.
 
