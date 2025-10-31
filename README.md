@@ -172,11 +172,11 @@ The comparative analysis of a Random Forest machine learning model against the S
 
 #### Performance Equivalence
 
-Both tracking systems demonstrated nearly identical energy collection capabilities, with the ML model achieving 99.9% efficiency compared to the astronomical SPA method. The ML system generated 9.77 kWh/m² versus 9.78 kWh/m² for SPA, representing only a 0.1% difference in daily energy output. Both tracking systems significantly outperformed the baseline global horizontal irradiance (GHI) of 7.62 kWh/m², with energy gains of 2.15 kWh/m² (28.3%) and 2.17 kWh/m² (28.5%) respectively.
+Both tracking systems demonstrated nearly identical energy collection capabilities, with the ML model achieving 100% efficiency compared to the astronomical SPA method. The ML system and the SPA system generated 10.2 kWh/m², representing 0% difference in daily energy output. Both tracking systems significantly outperformed the baseline global horizontal irradiance (GHI) of 7.62 kWh/m², with energy gains of 2.79 kWh/m² (37.6%).
 
 #### Tracking Accuracy Trade-offs
 
-While performance outcomes were equivalent, the tracking methodologies differed significantly. The SPA algorithm maintained superior positional accuracy with an average angle of incidence (AOI) of 2.0° compared to the ML model's 7.2°. The positional differences between the two systems showed a mean absolute error of 5.1° in tilt positioning and 0.6° in azimuth positioning, indicating that the ML model's largest deviations from SPA occur in the tilt axis.
+While performance outcomes were equivalent, the tracking methodologies differed significantly. The SPA algorithm maintained superior positional accuracy with an average angle of incidence (AOI) of 2.6° compared to the ML model's 7.7°. The positional differences between the two systems showed a mean absolute error of 5.0° in tilt positioning and 0.7° in azimuth positioning, indicating that the ML model's largest deviations from SPA occur in the tilt axis.
 
 #### Clear Sky Advantage for SPA
 
@@ -184,7 +184,7 @@ Under ideal sunny conditions, the astronomical SPA algorithm operates at optimal
 
 #### Practical Implications
 
-Despite reduced positional precision, the Random Forest model's ability to match SPA performance under clear sky conditions suggests that perfect astronomical tracking may not be necessary for optimal energy collection on sunny days. However, this analysis represents ideal conditions where SPA excels. The ML approach's tolerance for positioning errors while maintaining energy output indicates potential advantages in reduced mechanical complexity, though its true benefits would likely be more apparent during partially cloudy or variable weather conditions where adaptive tracking becomes crucial.
+Despite reduced positional precision, the Random Forest model's ability to match SPA performance under clear sky conditions suggests that perfect astronomical tracking may not be necessary for optimal energy collection on sunny days. However, this analysis represents ideal conditions where SPA excels. The ML approach's tolerance for positioning errors while maintaining energy output indicates potential advantages in reduced mechanical complexity, though its true benefits would likely be more apparent during partially cloudy or variable weather conditions where adaptive tracking may become crucial.
 
 The graph below presents a comparison between solar tracking controlled by the Random Forest model and astronomical tracking, using data from a **sunny day**.
 
