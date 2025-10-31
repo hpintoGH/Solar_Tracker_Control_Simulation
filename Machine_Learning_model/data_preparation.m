@@ -37,7 +37,7 @@ allData = cell(numel(files),1);
 
 for k = 1:numel(files)    
     file_name = "optimized_tilt_azimuth_results_" + string(files(k)) + ".csv"; % Files with best position for irradiance from PVlib
-    allData{k} = readtable(fullfile("PVlib_irradiance", file_name));
+    allData{k} = readtable(file_name);
 end
 best_position = vertcat(allData{:});
 clear allData
@@ -78,3 +78,4 @@ Y_val_ti = best_position.best_tilt(val_idx);
 X_test = X(test_idx, :);
 Y_test_az = best_position.best_azimuth(test_idx);
 Y_test_ti = best_position.best_tilt(test_idx);
+
