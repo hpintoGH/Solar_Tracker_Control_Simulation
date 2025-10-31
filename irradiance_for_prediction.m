@@ -28,7 +28,7 @@ Temperature = 27;     % Average temperature in degrees Celsius
 
 % Calculate solar position
 [SunAz, SunEl, ApparentSunEl] = pvl_spa(Time, Location, Pressure, Temperature);
-%ApparentSunZen = 90-ApparentSunEl;
+ApparentSunZen = 90-ApparentSunEl;
 SunZe = 90 - SunEl;
 
 % Calculate AOI for ML model positions
@@ -38,7 +38,7 @@ aoi_astro = pvl_getaoi(Astro_tilt, Astro_azimuth, SunZe, SunAz);
 
 % Calculate POA irradiance for ML model positions
 HExtra = pvl_extraradiation(day(Datetime, "dayofyear"));
-AM = pvl_relativeairmass(SunZe, 'simple');
+AM = pvl_relativeairmass(ApparentSunZen, 'simple');
 
 [SkyDiffuse_ML,SkyDiffuse_Iso_ML,SkyDiffuse_Cir_ML,SkyDiffuse_Hor_ML] = pvl_perez(Predicted_tilt, ...
     Predicted_azimuth, DHI, DNI, HExtra, SunZe, SunAz, AM);
@@ -248,5 +248,6 @@ azimuth_mae = mean(abs(Predicted_azimuth(daylight) - Astro_azimuth(daylight)));
 
 fprintf("Mean Absolute Tilt Error: %.1f°", tilt_mae)
 fprintf("\nMean Absolute Azimuth Error: %.1f°", azimuth_mae)
+
 
 end
