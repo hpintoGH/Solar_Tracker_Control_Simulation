@@ -197,7 +197,7 @@ The comparative analysis on July 31, 2023, under cloudy conditions reveals a rev
 
 #### Machine Learning Superiority in Variable Conditions
 
-Under cloudy skies, the ML model outperformed the astronomical SPA algorithm, achieving 109.4% efficiency compared to SPA. The ML system generated 4.59 kWh/m² versus 4.50 kWh/m² for SPA, representing a 2.0% energy advantage. More remarkably, while the ML model maintained a positive tracking gain of 0.9% over baseline GHI, the SPA system actually performed worse than horizontal irradiance with a -6.8% tracking loss.
+Under cloudy skies, the ML model narrowly outperformed the astronomical SPA algorithm, achieving 109.8% efficiency compared to SPA. The ML system generated 5.01 kWh/m² versus 4.99 kWh/m² for SPA, representing a 0.5% energy advantage. The ML model maintained a positive tracking gain of 16% over baseline GHI, while the SPA system achieved a performance of 15.4%.
 
 #### Adaptive Tracking Under Diffuse Conditions
 
@@ -205,7 +205,7 @@ The ML model's success stems from its ability to optimize for diffuse radiation 
 
 #### Performance Implications
 
-This analysis demonstrates that machine learning approaches excel in variable weather conditions where traditional astronomical tracking fails. The ML model's ability to adapt to changing irradiance patterns provides substantial advantages over rigid sun-following algorithms during cloudy periods.
+This analysis demonstrates that machine learning approaches can excel in variable weather conditions where traditional astronomical tracking performs worse. The ML model's ability to adapt to changing irradiance patterns provides substantial advantages over rigid sun-following algorithms during cloudy periods.
 
 The graph below presents a comparison between solar tracking controlled by the Random Forest model and astronomical tracking, using data from a **cloudy day**.
 
